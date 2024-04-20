@@ -2,26 +2,26 @@
 #include<vector>
 
 using namespace std;
- 
-bool binarySearch(int *arr,int element,int s,int e){
-    if(s>e){
-        return false;
+class stack{
+    public:
+    int *arr;
+    int s;
+    stack(int size){
+        arr=new int[size];
+        s=0;
     }
-    int mid=s+(e-s)/2;
-    if(arr[mid]==element){
-        return true;
-    }else if(element>arr[mid]){
-        return binarySearch(arr,element,mid+1,e);
-    }else{
-        binarySearch(arr,element,mid-1,e);
+    void push(int data){
+
     }
-}
+    int top(){
+
+    }
+    bool empty(){
+        
+    }
+};
 
 int main()
 {
-
-int arr[5]={2,5,7,8,9};
-   cout<<binarySearch(arr,9,0,4);
-    
     return 0;
 }
